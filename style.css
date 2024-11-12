@@ -251,17 +251,37 @@ section.portfolio .flex {
 
 }
 
+/*ESTILO DO FO RMULÁRIO DE CONTATO */
+    section.formulario{
+      padding: 80px 4%;  
+    }
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input{
+    width: 100%;
+    background-color: #00000032;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px 15px;
+}
 
 
-
-@media screen and (max-width:1020px) {
+f @media screen and (max-width:1020px) {
 
     /* CLASSES GERAIS */
     .flex {
         flex-direction: column;
     }
 
-    h2.titulo{
+    h2.titulo {
         font-size: 34px;
         line-height: 30px;
     }
@@ -305,25 +325,46 @@ section.portfolio .flex {
     section.sobre {
         padding: 80px 8%;
     }
-    
+
     .sobre .txt-sobre h2 {
         font-size: 34px;
         line-height: 35px;
         text-align: center;
-        
-    }   
+
+    }
+
     .sobre .flex {
         flex-direction: column-reverse;
         align-items: center;
         gap: 60px;
-        
+
     }
-    
-    .btn-social{
+
+    .btn-social {
         text-align: center;
     }
 
-    .img-sobre img{
+    .img-sobre img {
         width: 100%;
+    }
+
+    /* PORTFÓLIO */
+    section.portfolio {
+        padding: 80px 8%;
+        text-align: center;
+
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+
+    }
+
+    section.portfolio .flex {
+        gap: 50px;
+
+
     }
 }
