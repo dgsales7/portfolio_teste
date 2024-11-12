@@ -41,7 +41,7 @@ h2.titulo span {
     color: #00FF08;
 }
 
-button:hover {
+button:hover, form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px#00ff08;
     transform: scale(1.05);
 
@@ -251,7 +251,7 @@ section.portfolio .flex {
 
 }
 
-/*ESTILO DO FO RMULÁRIO DE CONTATO */
+/*ESTILO DO FORMULÁRIO DE CONTATO */
     section.formulario{
       padding: 80px 4%;  
     }
@@ -263,18 +263,41 @@ form{
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    margin-top: 15px;
 }
 
-form input{
+form input, form textarea{
     width: 100%;
-    background-color: #00000032;
+    background-color: #242424;
     border: 0;
     outline: 0;
     padding: 20px 15px 15px;
+    border-radius: 15PX;
+    color: #fff;
+    font-size: 18px;
 }
 
+form textarea{
+    resize: none;
+    max-height: 150px;
+}
 
-f @media screen and (max-width:1020px) {
+form .btn-enviar{
+    margin-top: 20px;   
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #00FF08;
+    color:#000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+ @media screen and (max-width:1020px) {
 
     /* CLASSES GERAIS */
     .flex {
