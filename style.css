@@ -1,4 +1,4 @@
-/* ESTILO GERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,10 +14,13 @@ body {
 .interface {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 15px ;
 }
 
 .flex {
     display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .btn-contato button {
@@ -100,6 +103,7 @@ section.topo-do-site .flex {
     color: white;
     font-size: 42px;
     line-height: 40px;
+
 }
 
 .topo-do-site h1 span {
@@ -132,10 +136,13 @@ section.especialidades {
 }
 
 section.especialidades .flex {
-    gap: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
 }
 
 .especialidades .especialidades-box {
+    width: 100%;
     color: white;
     padding: 40px;
     border-radius: 20px;
@@ -158,6 +165,8 @@ section.especialidades .flex {
     font-size: 28px;
     margin: 15px 0;
 }
+
+
 
 /* ESTILO DO SOBRE */
 section.sobre {
@@ -253,7 +262,7 @@ section.portfolio .flex {
 
 /*ESTILO DO FORMULÁRIO DE CONTATO */
     section.formulario{
-      padding: 80px 4%;  
+      padding: 40px 4%;  
     }
 
 form{
@@ -296,6 +305,134 @@ form .btn-enviar input{
     transition: .2s;
 
 }
+
+ /* Habilidades */
+section.habilidades{
+     padding: 40px 4%;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+ }
+
+ .habilidade-box {
+    padding: 40px 10%;
+    background-color: #121212;
+    border-radius: 30px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 8, 0.5);
+    transition: transform 0.2s;
+}
+
+.habilidade-box:hover {
+    transform: scale(1.05);
+}
+
+.habilidade-box i {
+    font-size: 50px;
+    color: #00FF08;
+}
+
+.habilidade-box h3 {
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    font-size: 24px ;
+    margin: 10px 0;
+    color: white;
+}
+
+.habilidade-box p {
+    font-size: 16px;
+    color: white;
+    margin: 5px 0;
+}
+
+
+/* Estilo para Certificados */
+section.certificados{
+    padding: 60px 4%;
+    background-color: #1a1a1a;
+    text-align: center;
+    color: white;
+
+}
+.certificados .titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.certificados .certficados-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+
+.certificados .certificado-box {
+    background-color: #2d2d2d; /* Fundo mais claro para os boxes */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.certificados .certificado-box img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.certificados .certificado-box p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.certificados .certificado-box a {
+    text-decoration: none;
+    color: #00FF08;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.certificado-box :hover {
+    transform: scale(1.05);
+}
+
+.certificados .certificado-box a:hover {
+    color: #ffcc00; /* Cor ao passar o mouse no link */
+}
+
+/* Currículo */
+section.curriculo {
+    padding: 60px ;
+    text-align: center;
+    color: white;
+}
+
+section.curriculo button {
+    margin-top: 18px;
+    background-color: #00FF08;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+section.curriculo button:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 8, 0.7);
+    transform: scale(1.05);
+}
+
+
 
  @media screen and (max-width:1020px) {
 
