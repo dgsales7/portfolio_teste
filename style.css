@@ -310,13 +310,12 @@ form .btn-enviar input{
 section.habilidades{
      padding: 40px 4%;
     text-align: center;
-    background-color: #121212;
     color: white;
  }
 
  .habilidade-box {
     padding: 40px 10%;
-    background-color: #121212;
+    
     border-radius: 30px;
     margin: 20px;
     text-align: center;
